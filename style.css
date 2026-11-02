@@ -1,0 +1,150 @@
+/* ===== GOOGLE FONT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===== GENERAL STYLING ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0b1120;
+    color: #e5e7eb;
+    line-height: 1.8;
+}
+
+/* ===== HEADER ===== */
+header {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #111827, #172554, #1e40af);
+    border-bottom: 3px solid #38bdf8;
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+header h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 18px;
+    color: #bae6fd;
+}
+
+/* ===== CONTENT SECTIONS ===== */
+section {
+    max-width: 950px;
+    margin: 35px auto;
+    padding: 35px;
+    background: #172033;
+    border: 1px solid #263650;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+}
+
+/* ===== HOVER EFFECT ===== */
+section:hover {
+    transform: translateY(-7px);
+    border-color: #38bdf8;
+    box-shadow: 0 12px 30px rgba(56, 189, 248, 0.15);
+}
+
+/* ===== SECTION HEADINGS ===== */
+section h2 {
+    font-size: 25px;
+    color: #38bdf8;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #334155;
+    padding-bottom: 12px;
+}
+
+/* ===== PARAGRAPHS ===== */
+section p {
+    font-size: 15px;
+    color: #cbd5e1;
+    text-align: justify;
+}
+
+/* ===== SELECTION COLOR ===== */
+::selection {
+    background: #38bdf8;
+    color: #0b1120;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0b1120;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2563eb;
+    border-radius: 10px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+
+    header {
+        min-height: 280px;
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    section {
+        margin: 20px 15px;
+        padding: 22px;
+    }
+
+    section h2 {
+        font-size: 21px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+}
+
+/* Profile Photo */
+.profile-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #38bdf8;
+    object-fit: cover;
+    box-shadow: 0 5px 20px rgba(56, 189, 248, 0.3);
+}
